@@ -8,21 +8,21 @@ pipeline {
             }
         }
 
-        stage("terraform init") {
+        stage("terraform Init") {
             steps {
                 sh ('terraform init');
             }
         }
         
-        stage("terraform plan") {
+        stage("terraform Plan") {
             steps {
                 sh ('terraform plan');
             }
         }
                 
-        stage("Terraform Action") {
+        stage("Terraform Apply") {
     steps {
-        echo "Executing Terraform action"
+        echo "Executing Terraform apply"
         sh ('terraform apply --auto-approve');
             }
         }
