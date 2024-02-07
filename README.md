@@ -1,3 +1,4 @@
+# Simple Nodejs Application 
 The main motto of this task is:
 1) To create a simple Nodejs Application and creating a docker image of it.
 2) To push the image to Container Registry either ECR or DockerHub. 
